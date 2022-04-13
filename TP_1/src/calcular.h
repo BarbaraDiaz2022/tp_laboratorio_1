@@ -7,6 +7,7 @@
 
 #ifndef CALCULAR_H_
 #define CALCULAR_H_
+//prueba 1
 
 /**
  * @brief Esta función se encarga de calcular el 10% de descuento a los dos precios ingresados por el usuaio (que los recibe como parametros)

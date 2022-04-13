@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//prueba 1
 void calcularDebito(float precioA, float precioL, float km, float* descuentoL, float* descuentoA)
 {
 
