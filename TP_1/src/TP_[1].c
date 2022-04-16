@@ -74,6 +74,6 @@ int main(void) {
 				break;
 		}
 	}while(opcion!=6);
-
+//trabajo terminado
 	return EXIT_SUCCESS;
 }
