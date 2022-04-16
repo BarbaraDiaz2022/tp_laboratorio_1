@@ -6,8 +6,7 @@
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
  ============================================================================
- */ //prueba 1
-
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include "calcular.h"
@@ -31,8 +30,7 @@ int main(void) {
 
 	do
 	{
-		printf("Indique una opción:\n"
-			   "1- Ingresar km: \n"
+		printf("Indique una opción:\n1- Ingresar km: \n"
 			   "2- Ingresar precio de vuelos: Aerolíneas, Latam\n"
 			   "3- Calcular costos\n"
 			   "4- Precio final\n"
@@ -84,7 +82,6 @@ int main(void) {
 				calcularBC(162965, 159339, 7090, &precioBitCoinL, &precioBitCoinA);
 				calcularPrecioUnitario(162965, 159339, 7090, &precioUnitarioL,&precioUnitarioA);
 				calcularDiferencia(162965, 159339, 7090, &diferencia);
-
 				mostrar(descuentoL, descuentoA, interesL, interesA, precioBitCoinL, precioBitCoinA,precioUnitarioL, precioUnitarioA, diferencia);
 				break;
 		}

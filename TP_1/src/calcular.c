@@ -8,37 +8,46 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//prueba 1
 void calcularDebito(float precioA, float precioL, float km, float* descuentoL, float* descuentoA)
 {
+		if(descuentoL!=NULL&&descuentoA!=NULL)
+		{
+			*descuentoL = precioL - (precioL * 10 / 100);
+			*descuentoA = precioA - (precioA * 10 / 100);
+		}
 
-		*descuentoL = precioL - (precioL * 10 / 100);
-		*descuentoA = precioA - (precioA * 10 / 100);
 }
 void calcularInteres(float precioA, float precioL, float km, float* interesL, float* interesA)
 {
-
-		*interesL = precioL + (precioL * 25 / 100);
-		*interesA = precioA + (precioA * 25 / 100);
+		if(interesL!=NULL&interesA!=NULL)
+		{
+			*interesL = precioL + (precioL * 25 / 100);
+			*interesA = precioA + (precioA * 25 / 100);
+		}
 }
 
 void calcularBC(float precioA, float precioL, float km, float* precioBitCoinL, float* precioBitCoinA)
 {
 		float bitCoin = 4606954.55;
-
-		*precioBitCoinL = precioL / bitCoin;
-		*precioBitCoinA = precioA / bitCoin;
+		if(precioBitCoinL!=NULL&&precioBitCoinA!=NULL)
+		{
+			*precioBitCoinL = precioL / bitCoin;
+			*precioBitCoinA = precioA / bitCoin;
+		}
 }
 
 void calcularPrecioUnitario(float precioA, float precioL, float km, float* precioUnitarioL, float* precioUnitarioA)
 {
+	if (precioUnitarioL!=NULL&&precioUnitarioA!=NULL)
+	{
 		*precioUnitarioL = precioL / km;
 		*precioUnitarioA = precioA / km;
+	}
 }
 
 void calcularDiferencia(float precioA, float precioL, float km, float* diferencia)
 {
-	if(precioA>precioL)
+	if(diferencia!=NULL&&(precioA>precioL))
 	{
 		*diferencia = precioA - precioL;
 	}
