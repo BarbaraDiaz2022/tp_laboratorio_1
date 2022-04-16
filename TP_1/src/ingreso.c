@@ -10,20 +10,18 @@
 float ingresoKm()
 {
 	float km=0;
-	int flag=0;
-	int retorno = -1;
+	int retorno;
 
 	printf("\nkm a ingresar: ");
 	scanf("%f", &km);
 
-	if((km>=400&&km<=25000)||(flag==0))
+	if((km>=400&&km<=25000))
 	{
 		retorno = km;
-		flag = 1;
 	}
 	else
 	{
-		printf("error, el km ingresado no pertenece al rango. ingrese un km valido\n");
+		printf("Error, el km ingresado no pertenece al rango. Ingrese un km valido\n");
 	}
 	return retorno;
 }
@@ -31,35 +29,38 @@ float ingresoKm()
 float precioAereolineas()
 {
 	float precioAereo=0;
-	int flag = 0;
+	int retorno;
 
-	if((precioAereo>=15000&&precioAereo<=600000)||(flag==0))
+	printf("\nPrecio Aerolíneas Argentinas: ");
+	scanf("%f", &precioAereo);
+
+	if(precioAereo>=15000&&precioAereo<=600000)
 	{
-		printf("\nPrecio Aerolíneas Argentinas: ");
-		scanf("%f", &precioAereo);
-		flag = 1;
+		retorno = precioAereo;
 	}
 	else
 	{
 		printf("\nError, no es un precio válido.Ingrese nuevamente\n");
 	}
-	return precioAereo;
+
+	return retorno;
 }
 
 float precioLat()
 {
 	float precioLatam=0;
-	int flag=0;
+	int retorno;
 
-	if((precioLatam>=15000)||(precioLatam<=600000)||(flag==0))
+	printf("\nPrecio LATAM: ");
+	scanf("%f", &precioLatam);
+
+	if(precioLatam>=15000&&precioLatam<=600000)
 	{
-		printf("\nPrecio LATAM: ");
-		scanf("%f", &precioLatam);
-		flag = 1;
+		retorno = precioLatam;
 	}
 	else
 	{
 		printf("\nError, no es un precio válido. Ingrese nuevamente\n");
 	}
-	return precioLatam;
+	return retorno;
 }

@@ -9,19 +9,19 @@
 #define INGRESO_H_
 
 /**
- * @brief esta funcion pide los km al usuario, lo valida y lo pasa por valor al main
+ * @brief Esta función pide los km al usuario, valida el dato y lo pasa por valor al main
  * @return flotante de tipo valor
  */
 float ingresoKm();
 
 /**
- * @brief esta funcion pide el precio de Aereolineas al usuario, lo valida y lo pasa por valor al main
+ * @brief Esta función pide el precio de Aereolineas al usuario, lo valida y lo pasa por valor al main
  * @return flotante de tipo valor
  */
 float precioAereolineas();
 
 /**
- * @brief esta funcion pide el precio de Latam al usuario, lo valida y lo pasa por valor al main
+ * @brief Esta función pide el precio de Latam al usuario, lo valida y lo pasa por valor al main
  * @return flotante de tipo valor
  */
 float precioLat();

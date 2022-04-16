@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "calcular.h"
+#include "ingreso.h"
 
 int main(void) {
 	setbuf(stdout, NULL);
@@ -41,24 +42,11 @@ int main(void) {
 		switch(opcion)
 		{
 			case 1:
-				do
-				{
-					printf("\nkm a ingresar: ");
-					scanf("%f", &km);
-				}while(km<400||km>25000);
+				km = ingresoKm();
 				break;
 			case 2:
-				do
-				{
-					printf("\nPrecio Aerolíneas Argentinas: ");
-					scanf("%f", &precioAereo);
-				}while(precioAereo<15000||precioAereo>600000);
-				do
-				{
-					printf("\nPrecio LATAM: ");
-					scanf("%f", &precioLatam);
-				}while(precioLatam<15000||precioLatam>600000);
-				break;
+				precioAereo = precioAereolineas();
+				precioLatam = precioLat();
 			case 3:
 				if(km!=0&&precioAereo!=0&&(precioLatam!=0))
 				{
